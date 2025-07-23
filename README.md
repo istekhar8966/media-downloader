@@ -45,5 +45,3 @@ Script needs **yt-dlp** and **ffmpeg** installed.
 sudo apt update
 sudo apt install -y yt-dlp ffmpeg
 
-```bash
-sudo pacman -S yt-dlp ffmpeg
