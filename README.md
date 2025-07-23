@@ -1,47 +1,75 @@
-# media-downloader
-# 🎧 YouTube Media Downloader - Bash Script
+YouTube Media Downloader (Bash Script)
 
-This is a powerful and simple Bash script to download **YouTube songs**, **videos**, and **playlists** directly in **MP3 (audio)** or **MP4 (video)** format — with support for high-quality downloads, metadata, and progress tracking.
+A simple but powerful tool to download YouTube content as MP3 or MP4 files. Works on Linux, macOS, and WSL.
+What It Does
 
----
+    Convert YouTube videos to MP3 (audio) or MP4 (video)
 
-## 🧰 What It Does
+    Handles both single videos and entire playlists
 
-- Downloads **YouTube playlists**, **single videos**, or **songs**
-- Choose whether to download as:
-  - 🎵 Audio (MP3)
-  - 🎥 Video (MP4 with resolution option)
-- Works on:
-  - ✅ Playlists
-  - ✅ Single video URLs
-- Sanitizes file names (removes spaces/special characters)
-- Prints clean progress info in terminal (no emojis)
-- Automatically embeds **thumbnail, metadata**, and **title** in audio
-- Lightweight and 100% command-line based
+    Keeps your files organized with clean filenames
 
----
+    Shows progress right in your terminal
 
-## 💻 Supported Operating Systems
+    Preserves video/audio quality
 
-| OS / Distro        | Status       |
-|--------------------|--------------|
-| Ubuntu / Debian    | ✅ Supported |
-| Arch / Manjaro     | ✅ Supported |
-| Fedora / RHEL      | ✅ Supported |
-| Alpine Linux       | ✅ Supported |
-| macOS (Intel/ARM)  | ✅ Supported |
-| Windows WSL        | ✅ Supported |
-| Native Windows     | ❌ Not Supported (yet) |
+Requirements
 
----
+You'll need these installed first:
 
-## 📦 Installation (Dependencies)
+    yt-dlp (the best YouTube downloader)
 
-Script needs **yt-dlp** and **ffmpeg** installed.
+    ffmpeg (for converting formats)
 
-### 🐧 Ubuntu / Debian
+Installation Guide
 
-```bash
-sudo apt update
-sudo apt install -y yt-dlp ffmpeg
+For Ubuntu/Debian:
+bash
 
+sudo apt update && sudo apt install -y yt-dlp ffmpeg
+
+For Arch/Manjaro:
+bash
+
+sudo pacman -S yt-dlp ffmpeg
+
+For macOS (using Homebrew):
+bash
+
+brew install yt-dlp ffmpeg
+
+If your package manager doesn't have them, you can try:
+bash
+
+pip install -U yt-dlp
+
+How to Use
+
+    Download the script
+
+    Make it executable:
+    bash
+
+chmod +x media-downloader.sh
+
+Run it:
+bash
+
+    ./media-downloader.sh
+
+The script will guide you through the rest - just follow the prompts!
+Supported Systems
+
+✔️ Most Linux distros (Ubuntu, Arch, Fedora, etc.)
+✔️ macOS (both Intel and Apple Silicon)
+✔️ Windows Subsystem for Linux (WSL)
+❌ Regular Windows (not supported yet)
+Tips
+
+    For playlists, the script creates a separate folder to keep things tidy
+
+    MP3 files come with proper metadata (title, artist, etc.)
+
+    You can choose video quality when downloading MP4
+
+Let me know if you run into any issues!
