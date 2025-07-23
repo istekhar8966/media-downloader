@@ -1,4 +1,4 @@
-YouTube Media Downloader (Bash Script)
+#YouTube Media Downloader (Bash Script)
 
 A simple but powerful tool to download YouTube content as MP3 or MP4 files. Works on Linux, macOS, and WSL.
 What It Does
