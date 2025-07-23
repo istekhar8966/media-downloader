@@ -1,6 +1,6 @@
 # YouTube Media Downloader (Bash Script)
 
-A simple but powerful tool to download YouTube content as MP3 or MP4 files. Works on Linux, macOS, and WSL.
+**A simple but powerful tool to download YouTube content as MP3 or MP4 files. Works on Linux, macOS, and WSL.
 What It Does
 
 Convert YouTube videos to MP3 (audio) or MP4 (video)
@@ -11,7 +11,7 @@ Keeps your files organized with clean filenames
 
 Shows progress right in your terminal
 
-Preserves video/audio quality
+Preserves video/audio quality**
 
 Requirements
 
