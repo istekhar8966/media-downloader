@@ -90,4 +90,4 @@ else
 fi
 
 echo ""
-echo "✅ Download complete. Files saved in '$output_dir/'"
+echo "Download complete!. Files saved in '$output_dir/'"
